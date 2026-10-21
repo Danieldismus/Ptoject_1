@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suppliers – ComradeHub</title>
+<meta name="description" content="Browse and search suppliers around the University of Eldoret.">
+<link rel="stylesheet" href="global.css">
+<link rel="stylesheet" href="Category.css">
+</head>
+<body data-page="category">
+<div id="site-header"></div>
+<main>
+<section class="page-hero" id="cat-hero">
+  <div class="container">
+    <h1 id="hero-title"></h1>
+    <p id="hero-text"></p>
+  </div>
+</section>
+
+<div class="container search-overlap">
+  <form class="searchbar" id="cat-search" role="search">
+    <input id="q" type="search" aria-label="Search suppliers">
+    <span class="sep"></span>
+    <select id="loc" aria-label="Location"></select>
+    <button type="submit">Search</button>
+  </form>
+</div>
+
+<div class="container listing">
+  <aside>
+    <button class="btn btn-outline filter-toggle" id="filter-toggle" type="button" aria-expanded="false" aria-controls="filters">Filters</button>
+    <div class="filters" id="filters"></div>
+  </aside>
+  <section aria-label="Results">
+    <div class="results-head"><p id="count" aria-live="polite"></p></div>
+    <div class="s-grid" id="grid"></div>
+  </section>
+</div>
+<div class="container category-back-row">
+  <a class="back" href="Index.html">Back to Home</a>
+</div>
+</main>
+<div id="site-footer"></div>
+<script src="Icons.js"></script>
+<script src="Data.js"></script>
+<script src="LAYOUT.JS"></script>
+<script src="Category.js"></script></body>
+</html>

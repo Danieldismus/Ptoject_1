@@ -1,0 +1,152 @@
+.detail {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  align-items: start;
+  gap: 32px;
+  padding-block: 32px 8px;
+}
+
+.d-main h1 {
+  color: var(--navy);
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.stars {
+  color: #7abf5a;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.chip {
+  padding: 4px 12px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: #193940;
+  font-size: 12.5px;
+}
+
+.d-desc {
+  max-width: 62ch;
+  margin: 20px 0 26px;
+  color: #193940;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.gallery img,
+.ph {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.ph {
+  display: grid;
+  place-items: center;
+  background: var(--bg);
+  border: 1px dashed #bac8d9;
+  color: #193940;
+}
+
+.services ul {
+  list-style: none;
+}
+
+.services li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 6px 0;
+  color: #193940;
+  font-size: 14px;
+}
+
+.services li svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: var(--green);
+}
+
+.aside {
+  position: sticky;
+  top: 84px;
+  display: grid;
+  gap: 16px;
+}
+
+.btn-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.addr {
+  margin-bottom: 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.hours {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.hours td {
+  padding: 4px 0;
+}
+
+.hours td:last-child {
+  color: var(--muted);
+  text-align: right;
+}
+
+.hours-note {
+  color: #193940;
+  font-size: 14px;
+}
+
+@media (max-width: 960px) {
+  .detail {
+    grid-template-columns: 1fr;
+  }
+
+  .aside {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .d-main h1 {
+    font-size: 22px;
+  }
+
+  .gallery {
+    gap: 8px;
+  }
+}

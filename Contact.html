@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact – ComradeHub</title>
+<meta name="description" content="Suggest a supplier or report incorrect information.">
+<link rel="stylesheet" href="global.css">
+<link rel="stylesheet" href="Contact.css">
+</head>
+<body data-page="contact">
+<div id="site-header"></div>
+<main>
+<section class="page-hero bg-all">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Suggest a supplier, report incorrect information, or give your feedback.</p>
+  </div>
+</section>
+<section class="container contact">
+  <form class="panel" id="contact-form">
+    <label for="fullname">Your name</label>
+    <input id="fullname" name="fullname" required autocomplete="name">
+    <label for="email">Your email</label>
+    <input id="email" name="email" type="email" required autocomplete="email">
+    <label for="topic">Topic</label>
+    <select id="topic" name="topic">
+      <option>Suggest a supplier</option>
+      <option>Report incorrect information</option>
+      <option>General question</option>
+    </select>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    <button class="btn btn-green" type="submit">Send message</button>
+    <p class="hint">This opens your email app with the message ready to send.</p>
+  </form>
+  <aside class="panel">
+    <h2 class="d-h">Get in touch</h2>
+    <div class="row"><span id="c-website"></span></div>
+    <div class="row"><span id="c-phone"></span></div>
+    <div class="row"><span>University of Eldoret, Eldoret, Kenya</span></div>
+  </aside>
+</section>
+</main>
+<div id="site-footer"></div>
+<script src="Data.js"></script>
+<script src="LAYOUT.JS"></script>
+<script src="Contact.js"></script></body>
+</html>
